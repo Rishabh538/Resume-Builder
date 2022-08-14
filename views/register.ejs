@@ -1,0 +1,40 @@
+<%- include("partials/header") %>
+
+<link rel="stylesheet" href="/stylesheet/register.css">
+
+
+    <div class="container">    
+        <h3>Sign up for free!</h3>
+        <div class="button">
+            <a class="google" href="/google">
+                <button id="login" class="btn" type="submit"><i class="icon-container fab fa-google"></i> Sign up with google</button>
+            </a>
+        </div>
+        <div class="line">
+            <p class="or">Or sign up with username and password</p>
+        </div>
+        <form action="/register" method="POST">
+            <div class="inp">
+                <label for="username" class="username"> User Name </label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" />
+
+                <label for="email"> Email Address </label>
+                <input type="email" id="email" name="email" placeholder="user@gmail.com"/>
+                
+                <label for="password">Password </label>
+                <input type="password" id="password" name="password" placeholder="Password goes here!"/>
+            </div>
+            <div class="button">
+                <button class="btn" type="submit">Get started</button>
+            </div>
+            <div class="down">
+                <p class="second-account ">Already have an account? </p>
+                <a class="reg" href="/login"> Login</a>
+            </div>
+        </form>
+    </div>
+
+
+<!-- <script src="/javascript/google.js"></script> -->
+
+<%- include("partials/footer") %>

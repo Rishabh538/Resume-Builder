@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset ="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../stylesheet/app.css">
+   
+    
+
+    <title>Resume Builder</title>
+	</head>
+	<body>
+        <nav class=" navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="far fa-address-card"></i> Resume Builder</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/resume">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/createresume">Create Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index">About</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#"><i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i></a>
+                  </li> -->
+                  <%if(!currentUser) {%>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login" >Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/register">SignUp</a>
+                  </li>
+                  <% } else { %>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">Signed In As <%= currentUser.username %></a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="/logout">Logout</a>
+                  </li>
+                  <% } %> 
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="mx-5 my-1">
+            <% if(success && success.length) {%>
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <%= success %> 
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            <% } %>
+          </div>
+          <div class="mx-5 my-1">
+            <% if(error && error.length) {%>
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <%= error %> 
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            <% } %>
+          </div>
+	

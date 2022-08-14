@@ -1,0 +1,88 @@
+body{
+    font-family: poppins;
+}
+
+.seventh{
+    background-color: #000000;
+}
+
+.nav-tabs {
+    border: 0;
+    padding: 15px 0.7rem;
+}
+
+.nav-tabs>.nav-item>.nav-link {
+    color: #888888;
+    margin: 0;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 11px 23px;
+    line-height: 1.5;
+}
+
+.nav-tabs>.nav-item>.nav-link i.now-ui-icons {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+}
+
+.nav-tabs.nav-tabs-neutral>.nav-item>.nav-link {
+    color: #FFFFFF;
+}
+
+.nav-tabs.nav-tabs-neutral>.nav-item>.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+}
+
+.card {
+    border: 0;
+    border-radius: 0.1875rem;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-header {
+    background-color: transparent;
+    border-bottom: 0;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+[data-background-color="orange"] {
+    background-color: #708090;
+}
+
+#bodycol{
+    background-color: #f5f3f4;
+}
+
+#highlight1{
+    background-color: #cddafd;
+}
+
+#highlight2{
+    background-color:  #fbf8cc;
+     
+}
+
+#highlight3{
+    background-color: #bde0fe;
+    
+}
+
+#do{
+    background-color: #bee3db;
+}
+
+#dont{
+    background-color: #fad2e1;
+}

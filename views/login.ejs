@@ -1,0 +1,37 @@
+<%- include("partials/header") %>
+
+<link rel="stylesheet" href="/stylesheet/login.css">
+
+
+    <div class="container"> 
+        <h3>Login here!</h3>
+        <div class="button">
+            <a class="google" href="/google">
+                <button  class="btn" type="submit"><i class="icon-container fab fa-google"></i>Login with google</button>
+            </a>
+        </div>
+        <div class="line">
+            <p class="or">Or Login with username and password</p>
+        </div>
+        <form action="/login" method="POST">
+            <div class="inp">
+                <label for="username" class="username"> User Name </label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" />
+            
+            <label for="password">Password </label>
+                <input type="password" id="password" name="password" placeholder="Password goes here!"/>
+            </div>
+            <div class="button">
+                <button class="btn" type="submit">Login</button>
+            </div>
+            <div class="down">
+                <p class="second-account ">Or Create new account-</p>
+                <a class="sign" href="/register">Sign Up</a>
+            </div>
+        </form>
+    </div>
+
+
+<!-- <script src="/javascript/google.js"></script> -->
+
+<%- include("partials/footer") %>

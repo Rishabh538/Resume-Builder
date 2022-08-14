@@ -1,0 +1,32 @@
+.indexmargin{
+    margin-bottom: .5em;
+    padding: 2px;
+}
+
+body{
+    font-family: poppins;
+}
+
+#first{
+    background-color: whitesmoke;
+}
+
+#second{
+    background-color: #B0C4DE;
+}
+
+#third{
+    background-color: #06d6a0;   
+}
+
+#forth{
+    background-color: antiquewhite;
+}
+
+#fifth{
+    background-color: #F0F8FF;
+}
+
+#sixth{
+    background-color: #000000;
+}

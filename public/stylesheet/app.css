@@ -1,0 +1,37 @@
+/*===== VARIABLES CSS =====*/
+/* :root {
+  --header-height: 3rem;
+   */
+  /*========== Colors ==========*/
+  /* --title-color: #0B0A0A;
+  --text-color: #403A3A;
+  --text-color-light: #707070;
+  --container-color: #FAFAFA;
+  --container-color-alt: #F0EFEF;
+  --body-color: #FCFCFC;
+} */
+
+/*========== Variables Dark theme ==========*/
+/* body.dark-theme{
+    --title-color: #F2F2F2;
+    --text-color: #BFBFBF;
+    --container-color: #212121;
+    --container-color-alt: #181616;
+    --body-color: #2B2B2B;
+  
+  } */
+  
+  /*========== Button Dark/Light ==========*/
+  /* .change-theme{
+    position: absolute;
+    right: 0;
+    top: 2.2rem;
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .change-theme:hover{
+    color: var(--title-color);
+  } */
